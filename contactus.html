@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend Games</title>
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/support.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header ">
+
+        <img src="assets/logo.png" alt="logo" class="logo">
+        <div class="navigation">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">HOME</a></li>
+                <li class="nav-item"><a href="#">ABOUT</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn">CATEGORIES</button>
+                <div class="drop-content">
+                    <ul class="droplist">
+                        <li class="drop-item"><a href="#">Latest</a></li><hr>
+                        <li class="drop-item"><a href="#">Action</a></li><hr>
+                        <li class="drop-item"><a href="#">RPG</a></li><hr>
+                        <li class="drop-item"><a href="#">Simulation</a></li><hr>
+                        <li class="drop-item"><a href="#">Racing</a></li><hr>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content-right">
+            <div class="profile-pic"><img src="assets/user.jpg" alt="profile pic"></div>
+        </div>
+    </div>
+
+        <ion-icon name="menu-sharp"  class="nav-ham"></ion-icon>
+        <ion-icon name="close-sharp" class="nav-close"></ion-icon>
+    </header>
+    <main>
+        <h1 class="secondary-title">Support Form</h1>
+        <form class="support-form" netlify>
+            <div class="name">
+                <label for="fullName">Full Name : </label> <br>
+                <input type="text" name="fullName" id="fullName" placeholder="Gitanshu Sankhla">
+            </div>
+            <div class="email">
+                <label for="email">Email : </label> <br>
+                <input type="email" name="email" id="email" placeholder="abc@email.com">
+            </div>
+            <div class="message">
+                <label for="message">Share your idea/bug/message : </label><br>
+                <textarea name="message" id="message"  rows="5" placeholder="Hey gitanshu, this website is awesome but I have an idea...."></textarea>
+            </div>
+            <button class="btn btn-submit" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

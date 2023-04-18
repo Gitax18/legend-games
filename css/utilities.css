@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'inter', sans-serif;
+}
+
+.container{
+    max-width: 130rem;
+    padding: 2.4rem;
+    margin: auto;
+}
+
+/* headings */
+.primary-title{
+    font-size: 7.2rem;
+    width: 55%;
+    color: #e9ecef;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin: 3.6rem 0;
+    line-height: 1;
+}
+.secondary-title{
+    font-size: 4rem;
+    width: 100%;
+    text-transform: capitalize;
+    color: #e9ecef;
+    letter-spacing: -0.75px;
+    font-weight: 700;
+    margin: 1.8rem 0;
+    line-height: 1;
+}
+.tertiary-title{
+    font-size: 3.2rem;
+    width: 55%;
+    color: #e9ecef;
+    font-weight: 700;
+    margin: 1.4rem 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.tag{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    color: #eee;
+    margin-right: 0.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #e64f83;
+}
+
+
+.tag:nth-child(2){
+    background-color: #2D033B;
+}
+.tag:nth-child(3){
+    background-color: #810CA8;
+}
+.tag:nth-child(4){
+    background-color: #C147E9;
+}
+.tag:nth-child(5){
+    background-color: #CB1C8D;
+}
+.tag:nth-child(6){
+    background-color: #D14D72;
+}
+.tag:nth-child(7){
+    background-color: #66347F;
+}
+
+.tag:nth-child(8){
+    background-color: #E74646;
+}
+/* buttons */
+.btn{
+    padding: 1.4rem 3.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 5px 5px 20px 0px rgb(0, 0, 0, 0.75);
+    transition: all 0.25s;
+}
+
+
+
+.btn:hover{
+    opacity: 0.75;
+}
+.btn:active{
+    box-shadow: 1px 3px 20px 0px rgb(0, 0, 0, 0.35);
+    transform: scale(0.99);
+}
+
+/* GRIDS */
+.grid{
+    display: grid;
+    gap: 2.4rem;
+}
+
+.grid-col-2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-5{
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.2rem;
+    row-gap: 4.4rem;
+}
+
+.grid-col-2-1{
+    grid-template-columns: 2fr 1fr;
+}
+

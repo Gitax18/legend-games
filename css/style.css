@@ -1,0 +1,446 @@
+/* ***********************************
+STYLING HEADER
+************************************** */
+.header{
+
+    display: inline-flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 4.8rem;
+    color: white; 
+    position:  absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.2rem;
+    z-index: 10;
+}
+
+.logo{
+    height: 8rem;
+    width: 8rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.navigation{
+    display: flex;
+    gap: 6rem;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.4rem;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.4rem;
+}
+
+.nav-item a , .dropbtn{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 1.8rem;
+    font-weight: 700;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.drop-content{
+    position: absolute;
+    width: 150%;
+    top: 100%;
+    left: -25%;
+    padding: 3rem 1.2rem;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0 0 5px 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    pointer-events: none;
+    transition: all 0.2s;
+    transform: translateY(-100%);
+}
+
+.droplist{
+    display: flex;
+    flex-direction: column;
+    /* gap: 2.4rem; */
+    align-items: center;
+    border-radius: 25px;
+    list-style: none;
+}
+
+.drop-item{
+margin: 1.8rem 0 1.4rem 0;
+}
+
+.droplist hr{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #eeeeee7d;
+}
+
+.drop-item a{
+    color: #eee;
+    font-size: 1.4rem;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.drop-item a:hover{
+    border-bottom: 2px solid #e64f83;
+}
+
+.dropdown:hover .drop-content{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0%);
+}
+
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.6rem;
+}
+
+.download{
+    font-size: 1.4em;
+    padding: 1.4rem 2.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ddd;
+    background-color: #e64f83;
+    border-color: #e64f83;
+}
+
+.download:active{
+    scale: 0.99;
+}
+
+.profile-pic img{
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius:50% ;
+    cursor: pointer;
+}
+
+/* ******************** nav icons ***************** */
+.nav-ham, .nav-close{
+    display: none;
+}
+
+/* ************************************
+  SECTION HERO
+************************************ */
+
+.section-hero{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)),
+    url('../assets/hero.jpg');
+    background-size: cover;
+    background-position: top right;
+}
+
+.hero-container{
+    max-width: 140rem;
+    height: 100%;
+    margin: auto;
+    padding: 7.2rem 2.4rem;
+}
+
+.hero-container .primary-title{
+    margin: 9.6rem 0 3.6rem;
+}
+
+.highlight{
+    color: #ff5892;
+}
+
+.hero-text{
+    margin: 3.6rem 0;
+    font-size: 2rem;
+    width: 50%;
+    color: #eee;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.btn-hero{
+    margin-top: 3.6rem;
+    background-color: #e64f83;
+    color: #dddddd;
+    border: 3px solid #e64f83;
+}
+
+.btn-new{
+    margin: 0 2.4rem;
+    padding: 1.4rem 1.8rem;
+    background-color: transparent;
+    color: #dddddd;
+    border: 3px solid #dddddd;
+}
+
+.btn-new:hover{
+    color: #303030;
+    background-color: #dddddd;
+}
+
+.highlight{
+    color: #ff5892;
+    font-weight: 900;
+}
+
+/* **********************
+  COROUSEL SECTION
+************************** */
+.section-corousel{
+    background-color: #1b1c1e;
+    padding: 9.6rem 0;
+}
+
+
+
+.corousel-img{
+    height: 100%;
+    position: relative;
+}
+.offer{
+    padding: 0.8rem 1.6rem;
+    background-color: #e64f83;
+    color: #eee;
+    position: absolute;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transform: translate(-50%, -50%);
+}
+
+.corousel-img img{
+    width: 100%;
+}
+
+.corousel-text{
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: 2fr 1fr;
+    color: #efefef;
+}
+
+.corousel-desc{
+    font-size: 1.8rem;
+    line-height: 1.7;
+    margin-top: 2.4rem;
+}
+
+.corousel-price-stats{
+    align-self: self-end;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 2.4rem;
+}
+
+.ruppee{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.corousel-price{
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+.corousel-price-stats .download{
+    padding: 1.2rem 3.6rem;
+    font-weight: 700;
+}
+
+.corousels-items{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2.4rem;
+}
+
+.corousel-item{
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.corousel-item img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.corousel-item img:hover{
+    scale: 1.1;
+}
+
+.corousel-active{
+    border: 3px solid #ff699d;
+}
+
+/* *********************
+    GAMES SECTION STYLINGS
+********************* */
+.section-games{
+    background-color: #1b1c1e;
+}
+
+.game-title{
+    font-size: 1.8rem;
+    margin: 0.8rem 0;
+    color: #eee;
+    font-weight: 600;
+}
+
+.games{
+    margin: 7.2rem auto;
+}
+
+.game-price{
+    color: #eee;
+    font-size: 1.6rem;
+}
+
+.game-price .ruppee{
+    font-size: 1.6rem;
+}
+
+.game-download{
+    width: 100%;
+    display: block;
+    text-align: center;
+    /* margin: auto 2.4rem ; */
+    /* padding: 0.8rem 1.6rem; */
+    background-color: #565656;
+}
+
+.game-item{
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.game-item img{
+    cursor: pointer;
+    width: 100%;
+    height: 70%;
+}
+
+/* *********************
+    SECTION CTA STYLING
+************************ */
+.section-cta{
+    background-color: #1b1c1e;
+    padding: 3.6rem 0 12.8rem 0;
+}
+
+.section-cta .container{
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.cta-img-block{
+    width: 100%;
+    background-image: url('../assets/cta\ design.png');
+    background-size: cover;
+    aspect-ratio: 16/9;
+}
+
+.cta-text{
+    font-size: 1.8rem;
+    color: #eee;
+    margin: 2.4rem 0;
+    line-height: 1.7;
+}
+
+.btn-cta{
+    color: #eee;
+    background-color: #e64f83;
+}
+
+/* **********************
+    FOOTER STYLINGS
+************************* */
+footer{
+    background-color: #1b1c1e;
+    font-size: 1.4rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #eee;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1.4rem;
+}
+
+.foot-icon{
+    color: white;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.footer-logos{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.policies{
+    margin: 2.4rem 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.foot-item,
+.policy{
+    cursor: pointer;
+}
+
+.foot-block{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2.4rem;
+    flex-direction: column  ;
+}
+
+.footer-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer-lists{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.4rem;
+}
+

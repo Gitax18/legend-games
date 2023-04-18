@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legends games</title>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<body>
+    <!-- creating the navigation bar  -->
+    <header class="header ">
+
+        <img src="assets/logo.png" alt="logo" class="logo">
+        <div class="navigation">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#">HOME</a></li>
+                <li class="nav-item"><a href="#">ABOUT</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn">CATEGORIES</button>
+                <div class="drop-content">
+                    <ul class="droplist">
+                        <li class="drop-item"><a href="#">Latest</a></li><hr>
+                        <li class="drop-item"><a href="#">Action</a></li><hr>
+                        <li class="drop-item"><a href="#">RPG</a></li><hr>
+                        <li class="drop-item"><a href="#">Simulation</a></li><hr>
+                        <li class="drop-item"><a href="#">Racing</a></li><hr>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content-right">
+            <a href="contactus.html"><button class=" download nav-download" >Contact me</button></a></button>
+            <div class="profile-pic"><img src="assets/user.jpg" alt="profile pic"></div>
+        </div>
+    </div>
+
+        <ion-icon name="menu-sharp"  class="nav-ham"></ion-icon>
+        <ion-icon name="close-sharp" class="nav-close"></ion-icon>
+    </header>
+
+    <main>
+        <section class="section-hero">
+            <div class="hero-container">
+                <h1 class="primary-title"> <span class="highlight">Adventure</span> awaits.</h1>
+                <h1 class="secondary-title">Get Your Game On with Legend Games</h1>
+                <p class="hero-text">
+                    Welcome to Legend Games Store!. We have the Huge Collection of Games.
+                    Here you can discover the Latest Titles and Classics and
+                    Shop for All Your Gaming Needs in One Place.
+                </p>
+                <div class="hero-btns">
+                    <button class=" btn btn-hero">explore</button>
+                    <button class=" btn btn-new">new arrivals</button>
+                </div>
+                <p class="hero-text">Join our<span class="highlight"> 500,000+ </span> Gamers community.</p>
+            </div>
+        </section>
+
+        <section class="section-corousel">
+            <div class="container">
+                <h2 class="secondary-title">UNLEASH YOUR INNER LEGEND</h2>
+            </div>
+            <div class="container corousel grid grid-col-2-1">
+                <div class="corousel-img">
+                    <span class="offer">Best Price</span>
+                    <img src="assets/special_edition/spe-edi.jpg" alt="">
+                </div>
+                <div class="corousel-text ">
+                    <div class="corousel-text-stats">
+                        <h2 class="tertiary-title corousel-game-title">Cyberpunk</h2>
+                        <p class="tag tag-y corousel-game-title">Sci-fi</p>
+                        <p class="corousel-desc">Cyberpunk is sci-fi game set in a dystopian futuristic setting that tends to focus on a "combination of lowlife and high tech", featuring futuristic tech, such as artificial intelligence and cybernetics.</p>
+                    </div>
+                    <div class="corousel-price-stats">
+                        <span class="corousel-price"> <span class="ruppee">₹</span>1,499</span>
+                        <span class="download corousel-download">Get It</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container grid grid-col-2-1">
+                <div class="corousels-items">
+                    <div class="corousel-item corousel-active" id="cyberpunk"><img src="assets/corousel/cyberpunk.jpg" alt="game poster"></div>
+                    <div class="corousel-item" id="amongus"><img src="assets/corousel/among us.jpg" alt="game poster"></div>
+                    <div class="corousel-item" id="angrybirds"><img src="assets/corousel/angry-birds.webp" alt="game poster"></div>
+                    <div class="corousel-item" id="cod"><img src="assets/corousel/cod.webp" alt="game poster"></div>
+                    <div class="corousel-item" id="gtav"><img src="assets/corousel/gta v.jpg" alt="game poster"></div>
+                    <div class="corousel-item" id="marvel"><img src="assets/corousel/marvel.jpg" alt="game poster"></div>
+                    <div class="corousel-item" id="pubg"><img src="assets/corousel/pubg.jpg" alt="game poster"></div>
+                </div>
+                <div></div>
+            </div>
+        </section>
+
+        <section class="section-games">
+            <div class="container">
+                <h2 class="secondary-title">From Action to Adventure, We Have It All</h2>
+                <span class="tag">Adventure</span>
+                <span class="tag">Action</span>
+                <span class="tag">RPG</span>
+                <span class="tag">Simulation</span>
+                <span class="tag">FPS</span>
+                <span class="tag">Racing</span>
+                <span class="tag">Shooting</span>
+                <div class="container">
+                    <div class="games grid grid-col-5">
+                        <div class="game-item">
+                            <img src="assets/cards/cd1.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Battlefield</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 1,499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+
+                        <div class="game-item">
+                            <img src="assets/cards/cd2.jpg" alt="game poster">
+                            <div class="tag">Adventure</div>
+                            <p class="game-title">Angry Birds</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 649</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+
+                        <div class="game-item">
+                            <img src="assets/cards/cd3.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Call Of Duty: MW</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,999</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd4.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Overwatch</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,999</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd5.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Ben 10: POE</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd6.jpg" alt="game poster">
+                            <div class="tag">RPG</div>
+                            <p class="game-title">Witcher</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 3,499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd7.jpg" alt="game poster">
+                            <div class="tag">RPG</div>
+                            <p class="game-title">Minecraft dungeons</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,599</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd8.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">RDR 2</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 1,499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd1.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Battlefield</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 1,499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+
+                        <div class="game-item">
+                            <img src="assets/cards/cd2.jpg" alt="game poster">
+                            <div class="tag">Adventure</div>
+                            <p class="game-title">Angry Birds</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 649</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+
+                        <div class="game-item">
+                            <img src="assets/cards/cd3.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Call Of Duty: MW</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,999</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd4.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Overwatch</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,999</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd5.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Ben 10: POE</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd6.jpg" alt="game poster">
+                            <div class="tag">RPG</div>
+                            <p class="game-title">Witcher</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 3,499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd7.jpg" alt="game poster">
+                            <div class="tag">RPG</div>
+                            <p class="game-title">Minecraft dungeons</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,599</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd8.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">RDR 2</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 1,499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd1.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Battlefield</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 1,499</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+
+                        <div class="game-item">
+                            <img src="assets/cards/cd2.jpg" alt="game poster">
+                            <div class="tag">Adventure</div>
+                            <p class="game-title">Angry Birds</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 649</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+
+                        <div class="game-item">
+                            <img src="assets/cards/cd3.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Call Of Duty: MW</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,999</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                        <div class="game-item">
+                            <img src="assets/cards/cd4.jpg" alt="game poster">
+                            <div class="tag">Action</div>
+                            <p class="game-title">Overwatch</p>
+                            <span class="game-price"><span class="ruppee">₹</span> 2,999</span>
+                            <span class="download game-download">Get it</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cta">
+            <div class="container grid">
+                <div class="cta-img-block">
+                    <!-- <img src="assets/cta design.png" alt="cta image"> -->
+                </div>
+                <div class="cta-text-block">
+                    <h2 class="secondary-title">Explore Legend Games</h2>
+                    <p class="cta-text">
+                        Browse all games of genres, features, producer, price to find your next game. 
+                    </p>
+                    <button class="btn btn-cta">Explore</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer">
+            <div class="footer-logos">
+                <img src="assets/logo.png" alt="logo" class="logo">
+                <div class="social-icon">
+                    <ion-icon name="logo-instagram" class="foot-icon"></ion-icon>
+                    <ion-icon name="logo-facebook" class="foot-icon"></ion-icon>
+                    <ion-icon name="logo-twitch" class="foot-icon"></ion-icon>
+                </div>
+                <div class="policies">
+                    <p class="policy">Terms of Service</p>
+                    <p class="policy">Privacy Policy</p>
+                    <p class="policy">Refund Policy</p>
+                </div>
+                <p class="copyright">
+                    &copy; 2023 Legend Games. Inc. all right reserved 
+                </p>
+            </div>
+            <div class="foot-block">
+                <h3 class="footer-title">Resources</h3>
+                <ul class="footer-lists">
+                    <li class="foot-item">Career</li>
+                    <li class="foot-item">Company</li>
+                    <li class="foot-item">Support</li>
+                    <li class="foot-item">Store</li>
+                    <li class="foot-item">FAQs</li>
+                </ul>
+            </div>
+        
+            <div class="foot-block">
+                <h3 class="footer-title">Made by Us</h3>
+                <ul class="footer-lists">
+                    <li class="foot-item">Starlight Crusaders</li>
+                    <li class="foot-item">Xenon Exile</li>
+                    <li class="foot-item">Sim Flight</li>
+                    <li class="foot-item">niggerland</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

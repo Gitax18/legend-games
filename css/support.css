@@ -1,0 +1,57 @@
+body{
+    background-color: #1b1c1e;
+    font-size: 62.5%;
+    font-family: 'inter', sans-serif;
+}
+
+.secondary-title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 12.8rem;
+}
+
+.support-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.6rem;
+    max-width: 40vw;
+    margin: auto;
+    padding: 2.4rem;
+    /* background-color: antiquewhite; */
+}
+
+label{
+    color: #eee;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.name,
+.email,
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100%;
+}
+
+input,
+textarea{
+    padding: 1.4rem;
+    border-radius: 9px;
+    resize: none;
+}
+
+input::placeholder,
+textarea::placeholder{
+    font-size: 1.4rem;
+    font-weight: 600;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-family: 'inter';
+}
+
+
